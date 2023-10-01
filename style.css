@@ -22,6 +22,8 @@ section{
     background: white;
     padding-top: 7%;
     border-radius: 20px;
+
+    box-shadow: 5px 8px 20px rgba(255,255,255,0.5);
 }
 #passwordgenerator{
     height: 100%;
@@ -41,12 +43,66 @@ section{
     width: 100%;
     position: relative;
 }
+#passwordgenerator .generate::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    top: 45px;
+    background: linear-gradient(to right, orangered, blueviolet);
+}
 
 #passwordgenerator .generate input{
     height: 100%;
     width: 100%;
+    outline: none;
+    height: 45px;
     padding-left: 15px;
+    border: none;
+    font-size: 1.2em;
 }
 #passwordgenerator .generate i{
     position: absolute;
+    right: 2px;
+    font-size: 2.5em;
+    top: 0px;
+    color: rgb(55, 52, 52);
+    cursor: pointer;
+}
+.include{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.include label{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+.include label #lenght{
+    width: 30px;
+    outline: none;
+    padding-left: 5px;
+}
+#btn{
+    width: 200px;
+    height: 45px;
+    margin-left: 28%;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    background: linear-gradient(to top, orangered, blueviolet);
+}
+#btn:hover{
+    background: linear-gradient(to bottom, orangered, blueviolet);
 }

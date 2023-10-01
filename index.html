@@ -14,30 +14,30 @@
         <div id="passwordgenerator">
             <h1>Password Generator</h1>
             <div class="generate">
-                <input type="text" id="password" readonly placeholder="Generate a password"><i class='bx bxs-copy'></i>
+                <input type="text" id="password" readonly placeholder="Generate a password"><i class='bx bxs-copy' id="copy"></i>
             </div>
             <div class="include">
                 <label><span>Password Lenght:</span>
-                    <input type="number" id="lenght"></label>
+                    <input type="number" id="lenght" value="20"></label>
                 <label>
 
                     <span>Include Uppercase letters:</span>
-                    <input type="checkbox" id="uppercase">
+                    <input type="checkbox" id="uppercase" checked>
                 </label>
                 <label>
 
                     <span>Include Lowercase letters:</span>
-                    <input type="checkbox"  id="lowercase">
+                    <input type="checkbox"  id="lowercase" checked>
                 </label>
                 <label>
 
                     <span>Include Numbers:</span>
-                    <input type="checkbox"  id="numbers">
+                    <input type="checkbox"  id="numbers" checked>
                 </label>
 
                 <label>
                     <span>Include Symbols:</span>
-                    <input type="checkbox" id="symbols">
+                    <input type="checkbox" id="symbols" checked>
                 </label>
             </div>
 <input type="button" value="Generate password" id="btn">
