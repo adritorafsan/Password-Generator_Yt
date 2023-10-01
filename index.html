@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Younger Coding</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    
+    <section>
+        <div id="passwordgenerator">
+            <h1>Password Generator</h1>
+            <div class="generate">
+                <input type="text" id="password" readonly placeholder="Generate a password"><i class='bx bxs-copy'></i>
+            </div>
+            <div class="include">
+                <label><span>Password Lenght:</span>
+                    <input type="number" id="lenght"></label>
+                <label>
+
+                    <span>Include Uppercase letters:</span>
+                    <input type="checkbox" id="uppercase">
+                </label>
+                <label>
+
+                    <span>Include Lowercase letters:</span>
+                    <input type="checkbox"  id="lowercase">
+                </label>
+                <label>
+
+                    <span>Include Numbers:</span>
+                    <input type="checkbox"  id="numbers">
+                </label>
+
+                <label>
+                    <span>Include Symbols:</span>
+                    <input type="checkbox" id="symbols">
+                </label>
+            </div>
+<input type="button" value="Generate password" id="btn">
+        </div>
+
+
+    </section>
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>
